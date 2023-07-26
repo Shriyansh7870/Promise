@@ -164,7 +164,26 @@
                   })<br>
                 Exaplin > In this example of call back hell all function depend on each other for making the pizza <br>call back situation is create by one function depend on other function.</p>
                 <br>
-                <h2>7.Create examples to explain async await function</h2>
+                <h2>7.Create examples to explain promises function</h2>
+                <p>Ans:let promise = new Promise(function (resolve, reject) {<br>
+                  const x = "hello";<br>
+                  const y = "hello"<br>
+                  if (x === y) {<br>
+                    resolve();<br>
+                  } else {<br>
+                    reject();<br>
+                  }<br>
+                });<br>
+                
+                promise.<br>
+                  then(function () {<br>
+                    console.log('Success, You are a free');<br>
+                  }).<br>
+                  catch(function () {<br>
+                    console.log('Some error ');<br>
+                  });<br>
+                output:<br>Success, You are a free</p>
+                <h2>8.Create examples to explain async await function</h2>
                 <p>Ans: The async/await feature in JavaScript provides a more elegant and readable way to handle asynchronous operations without falling into callback hell. <br>
                   let promise = new Promise(function (resolve, reject) {<br>
                     setTimeout(function () {<br>
@@ -182,7 +201,7 @@
                 asyncFunc();<br>
                output:<br>Promise resolved<br>
                hello</p>
-               <h2>8.Create examples to explain promise.all function</h2>
+               <h2>9.Create examples to explain promise.all function</h2>
                <p>Ans:It s a powerful feature in JavaScript that allows you to handle multiple promises concurrently <br>and wait for all of them to resolve before proceeding.<br>
                 p1 = Promise.resolve(50);<br>
                 p2 = 200<br>
